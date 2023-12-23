@@ -28,41 +28,59 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link lh-1" href="" role="button">
                     <span class="uil fs-0 me-2 uil-files-landscapes-alt"></span>E-Resep
                 </a>
             </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
-                    <span class="uil fs-0 me-2 uil-layers"></span>Inventori
+                    <span class="uil fs-0 me-2 uil-shopping-cart"></span>Order
                 </a>
-                <ul class="dropdown-menu navbar-dropdown-caret dropdown-menu-card py-0">
-                    <div class="border-0 scrollbar" style="max-height: 60vh;">
-                        <div class="px-3 pt-4 pb-3 img-dropdown">
-                            <div class="row gx-4 gy-5">
-                                <div class="col-12 col-sm-6 col-md-6">
-                                    <div class="dropdown-item-group">
-                                        <span class="me-2" data-feather="package" style="stroke-width:2;"></span>
-                                        <h6 class="dropdown-item-title">Manajemen Stok</h6>
-                                    </div>
-                                    <a class="dropdown-link" href="#">Opname</a>
-                                    <a class="dropdown-link" href="#">Stok Awal</a>
-                                    <a class="dropdown-link" href="#">Transfer</a>
-                                    <a class="dropdown-link" href="#">Alur</a>
-                                    <a class="dropdown-link" href="#">Penyesuaian</a>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6">
-                                    <div class="dropdown-item-group">
-                                        <span class="me-2" data-feather="shopping-cart" style="stroke-width:2;"></span>
-                                        <h6 class="dropdown-item-title">Order</h6>
-                                    </div>
-                                    <a class="dropdown-link" href="#">Jadwal Produksi</a>
-                                    <a class="dropdown-link" href="#">Pembuatan (MTO)</a>
-                                    <a class="dropdown-link" href="#">Pemakaian</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <ul class="dropdown-menu navbar-dropdown-caret">
+                    <li>
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "mto") ? "active" : ""; ?>" href="<?= site_url('order/mto'); ?>">
+                            <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="shopping-bag"></span>Pembuatan (MTO)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "pemakaian") ? "active" : ""; ?>" href="<?= site_url('order/pemakaian'); ?>">
+                            <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="tag"></span>Pemakaian</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                    <span class="uil fs-0 me-2 uil-layers"></span>Manajemen Stok
+                </a>
+                <ul class="dropdown-menu navbar-dropdown-caret">
+                    <li>
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "alur") ? "active" : ""; ?>" href="<?= site_url('stok/alur#kimia-baku'); ?>">
+                            <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="activity"></span>Alur</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "transfer") ? "active" : ""; ?>" href="<?= site_url('stok/transfer#kimia-baku'); ?>">
+                            <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="shuffle"></span>Transfer</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "penyesuaian") ? "active" : ""; ?>" href="<?= site_url('stok/penyesuaian#kimia-baku'); ?>">
+                            <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="edit-3"></span>Penyesuaian</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "opname") ? "active" : ""; ?>" href="<?= site_url('stok/opname#kimia-baku'); ?>">
+                            <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clipboard"></span>Opname</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "stok-awal") ? "active" : ""; ?>" href="<?= site_url('stok/stok-awal#kimia-baku'); ?>">
+                            <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="archive"></span>Stok Awal</div>
+                        </a>
+                    </li>
+
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -71,12 +89,12 @@
                 </a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
                     <li>
-                        <a class="dropdown-item" href="<?= site_url('master/item#desain'); ?>">
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "item") ? "active" : ""; ?>" href="<?= site_url('master/item#desain'); ?>">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="bookmark"></span>Item</div>
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="<?= site_url('master/umum'); ?>">
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "umum") ? "active" : ""; ?>" href="<?= site_url('master/umum#period'); ?>">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="settings"></span>Umum</div>
                         </a>
                     </li>
