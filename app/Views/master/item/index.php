@@ -207,78 +207,64 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Variasi Kimia</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Acetic Acid</h5>
                 <button class="btn p-1" type="button" data-bs-dismiss="modal" aria-label="Close">
                     <span class="fas fa-times fs--1"></span>
                 </button>
             </div>
             <div class="modal-body">
-                <div class="row mb-4">
-                    <div class="col-4">
-                        <div class="card border border-primary">
-                            <div class="card-body">
-                                <h4 class="card-title">Master Kimia</h4>
-                                <div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-900 fw-semi-bold">ID :</p>
-                                        <p class="text-1100 fw-semi-bold">Vs7AG8</p>
+                <form>
+                    <div class="d-flex bg-200">
+                        <div class="p-2 flex-grow-1 ">
+                            <div class="row row-cols-lg-5 g-1 align-items-center">
+                                <div class="col-12" hidden>
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control-plaintext outline-none" id="id" name="id" type="text" readonly="" value="<?= random_string('alnum', 6) ?>" />
                                     </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-900 fw-semi-bold">NAMA :</p>
-                                        <p class="text-1100 fw-semi-bold">Acetic Acid</p>
+                                </div>
+                                <div class="col-12">
+                                    <label class="sr-only" for="inlineFormInputGroupUsername">Tare</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" placeholder="Tare" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+                                        <span class="input-group-text">Kg</span>
                                     </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="sr-only" for="inlineFormInputGroupUsername">Netto</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" placeholder="Netto" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+                                        <span class="input-group-text">Kg</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="sr-only" for="inlineFormInputGroupUsername">Berat Jenis</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" placeholder="Berat Jenis" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+                                        <span class="input-group-text">Kg/Lit</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="sr-only" for="inlineFormInputName">Edate</label>
+                                    <input class="form-control datetimepicker" id="datepicker" type="text" placeholder="Edate" data-options='{"disableMobile":true,"dateFormat":"d/m/Y"}' />
+                                </div>
+                                <div class="col-12">
+                                    <label class="sr-only" for="inlineFormInputGroupUsername"></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected="">Pilih Status</option>
+                                        <option value="Efektif">Efektif</option>
+                                        <option value="Non-Efektif">Non-Efektif</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <form>
-                    <div class="row row-cols-lg-5 g-3 align-items-center">
-                        <div class="col-12">
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Tare</label>
-                            <div class="input-group">
-                                <input class="form-control" type="number" placeholder="Tare" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
-                                <span class="input-group-text">Kg</span>
-                            </div>
+                        <div class="p-2">
+                            <button class="btn btn-phoenix-warning" type="button">Hapus</button>
+                            <button class="btn btn-primary" type="submit">Simpan</button>
                         </div>
-                        <div class="col-12">
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Netto</label>
-                            <div class="input-group">
-                                <input class="form-control" type="number" placeholder="Netto" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
-                                <span class="input-group-text">Kg</span>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Berat Jenis</label>
-                            <div class="input-group">
-                                <input class="form-control" type="number" placeholder="Berat Jenis" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
-                                <span class="input-group-text">Kg/Lit</span>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <label class="sr-only" for="inlineFormInputName">Edate</label>
-                            <input class="form-control datetimepicker" id="datepicker" type="text" placeholder="Edate" data-options='{"disableMobile":true,"dateFormat":"d/m/Y"}' />
-                        </div>
-                        <div class="col-12">
-                            <label class="sr-only" for="inlineFormInputGroupUsername"></label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected="">Pilih Status</option>
-                                <option value="Efektif">Efektif</option>
-                                <option value="Non-Efektif">Non-Efektif</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row d-flex flex-row-reverse">
-                        <div class="col-12 mt-2">
-
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3 flex-row-reverse">
-                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
-            <div class="modal-footer"><button class="btn btn-primary" type="button">Okay</button><button class="btn btn-outline-primary" type="button" data-bs-dismiss="modal">Cancel</button></div>
+            <div class="modal-footer"><button class="btn btn-outline-primary" type="button" data-bs-dismiss="modal">Kembali</button></div>
         </div>
     </div>
 </div>
