@@ -11,7 +11,7 @@ class Umum extends BaseController
     {
         $uri = current_url(true);
 
-        if (!is_file(APPPATH . 'Views/master/Umum/' . $page . '.php')) {
+        if (!is_file(APPPATH . 'Views/master/umum/' . $page . '.php')) {
             throw new PageNotFoundException($page);
         }
 

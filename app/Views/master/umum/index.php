@@ -10,9 +10,9 @@
 </nav>
 
 <ul class="nav nav-pills">
-    <li class="nav-item"><a id="period-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-period" aria-selected="false" tabindex="-1" class="nav-link" aria-current="page" href="#tab-period">period</a></li>
-    <li class="nav-item"><a id="proses-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-proses" aria-selected="false" tabindex="-1" class="nav-link" href="#tab-proses">proses</a></li>
-    <li class="nav-item"><a id="segmentasi-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-segmentasi" aria-selected="false" tabindex="-1" class="nav-link" href="#tab-segmentasi">segmentasi</a></li>
+    <li class="nav-item"><a id="period-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-period" aria-selected="false" tabindex="-1" class="nav-link" aria-current="page" href="#tab-period">Period</a></li>
+    <li class="nav-item"><a id="proses-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-proses" aria-selected="false" tabindex="-1" class="nav-link" href="#tab-proses">Proses</a></li>
+    <li class="nav-item"><a id="segmentasi-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-segmentasi" aria-selected="false" tabindex="-1" class="nav-link" href="#tab-segmentasi">Segmentasi</a></li>
 </ul>
 
 <div class="tab-content mt-3" id="myTabContent">
@@ -21,7 +21,7 @@
             <div class="col-12">
                 <div class="card border border-light">
                     <div class="card-body">
-                        <h4 class="card-title">period</h4>
+                        <h4 class="card-title">Period</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
             <div class="col-12">
                 <div class="card border border-light">
                     <div class="card-body">
-                        <h4 class="card-title">proses</h4>
+                        <h4 class="card-title">Proses</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
             <div class="col-12">
                 <div class="card border border-light">
                     <div class="card-body">
-                        <h4 class="card-title">segmentasi</h4>
+                        <h4 class="card-title">Segmentasi</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>

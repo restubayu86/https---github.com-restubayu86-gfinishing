@@ -1,3 +1,4 @@
+<?php $uri = current_url(true); ?>
 <nav class="navbar navbar-top fixed-top navbar-expand-lg" id="navbarTop" style="display:none;">
     <div class="navbar-logo">
         <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTopCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
@@ -76,7 +77,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "stok-awal") ? "active" : ""; ?>" href="<?= site_url('stok/stok-awal#kimia-baku'); ?>">
+                        <a class="dropdown-item <?= ($uri->setSilent()->getSegment(2) == "stokawal") ? "active" : ""; ?>" href="<?= site_url('stok/stokawal#kimia-baku'); ?>">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="archive"></span>Stok Awal</div>
                         </a>
                     </li>

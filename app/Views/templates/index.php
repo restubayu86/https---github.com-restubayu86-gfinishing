@@ -37,6 +37,14 @@
     <link href="<?= base_url(); ?>../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
     <link href="<?= base_url(); ?>../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
     <link href="<?= base_url(); ?>../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+
+    <link href="<?= base_url(); ?>../vendors/datatable/css/datatables.min.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url(); ?>../vendors/datatable/css/dataTables.bootstrap4.min.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url(); ?>../vendors/datatable/Buttons-2.2.3/css/buttons.bootstrap4.min.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url(); ?>../vendors/choices/choices.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>../vendors/flatpickr/flatpickr.min.css" rel="stylesheet" />
+    <link href="<?= base_url(); ?>../vendors/dropzone/min/dropzone.min.css" rel="stylesheet" />
+
     <script>
         var phoenixIsRTL = window.config.config.phoenixIsRTL;
         if (phoenixIsRTL) {
@@ -63,14 +71,14 @@
     <!-- ===============================================-->
     <main class="main" id="top">
         <?php
-        echo $this->include('templates/navbar-1');
-        echo $this->include('templates/navbar-2');
-        echo $this->include('templates/navbar-3');
+        // echo $this->include('templates/navbar-1');
+        // echo $this->include('templates/navbar-2');
+        // echo $this->include('templates/navbar-3');
         echo $this->include('templates/navbar-4');
-        echo $this->include('templates/navbar-5');
-        echo $this->include('templates/navbar-6');
-        echo $this->include('templates/navbar-7');
-        echo $this->include('templates/navbar-8');
+        // echo $this->include('templates/navbar-5');
+        // echo $this->include('templates/navbar-6');
+        // echo $this->include('templates/navbar-7');
+        // echo $this->include('templates/navbar-8');
         ?>
         <script>
             var navbarTopShape = window.config.config.phoenixNavbarTopShape;
@@ -192,6 +200,13 @@
     <script src="<?= base_url(); ?>../vendors/dayjs/dayjs.min.js"></script>
     <script src="<?= base_url(); ?>../assets/js/phoenix.js"></script>
 
+    <script src="<?= base_url(); ?>../vendors/datatable/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url(); ?>../vendors/datatable/js/datatables.min.js"></script>
+    <script src="<?= base_url(); ?>../vendors/datatable/Buttons-2.2.3/js/dataTables.buttons.min.js"></script>
+    <script src="<?= base_url(); ?>../vendors/datatable/Buttons-2.2.3/js/buttons.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>../vendors/choices/choices.min.js"></script>
+    <script src="<?= base_url(); ?>../assets/js/flatpickr.js"></script>
+    <script src="<?= base_url(); ?>../vendors/dropzone/min/dropzone.min.js"></script>
     <?php
     helper('html');
     $uri = current_url(true);
@@ -204,9 +219,28 @@
                 case 'item':
                     echo script_tag(base_url() . "../../../assets/js/master/item.js");
                     break;
+                case 'umum':
+                    echo script_tag(base_url() . "../../../assets/js/master/umum.js");
+                    break;
+            }
+            break;
 
-                default:
-                    # code...
+        case 'stok':
+            switch ($seg2) {
+                case 'alur':
+                    echo script_tag(base_url() . "../../../assets/js/stok/alur.js");
+                    break;
+                case 'transfer':
+                    echo script_tag(base_url() . "../../../assets/js/stok/transfer.js");
+                    break;
+                case 'penyesuaian':
+                    echo script_tag(base_url() . "../../../assets/js/stok/penyesuaian.js");
+                    break;
+                case 'opname':
+                    echo script_tag(base_url() . "../../../assets/js/stok/opname.js");
+                    break;
+                case 'stokawal':
+                    echo script_tag(base_url() . "../../../assets/js/stok/stokawal.js");
                     break;
             }
             break;
