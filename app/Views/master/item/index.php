@@ -48,8 +48,110 @@
             <div class="col-12">
                 <div class="card border border-light">
                     <div class="card-body">
-                        <h4 class="card-title">Formulasi</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="table-responsive mt-1">
+                            <table class="table cell-border display table-compact table-hover table-striped table-item-formulasi" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>NO</th>
+                                        <th>ID</th>
+                                        <th>PROSES</th>
+                                        <th>GROUP</th>
+                                        <th>VERSI</th>
+                                        <th>CODE</th>
+                                        <th>SEGMENT</th>
+                                        <th>STATUS</th>
+                                        <th>EDATE</th>
+                                        <th>DESKRIPSI</th>
+                                        <th>ALUR STOK</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle white-space-nowrap pe-0 ps-4 btn-reveal-trigger">
+                                            <div class="font-sans-serif btn-reveal-trigger position-static">
+                                                <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                                                    <span class="fas fa-ellipsis-h fs--2"></span>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end py-2">
+                                                    <a class="dropdown-item" href="#!">View</a>
+                                                    <a class="dropdown-item" data-bs-toggle="offcanvas" href="#kimiaOffcanvas" role="button" aria-controls="kimiaOffcanvas">Edit</a>
+                                                    <a class="dropdown-item" data-bs-toggle="modal" href="#exampleModal">Variasi</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>1</td>
+                                        <td>VsdG8</td>
+                                        <td><span class="badge badge-phoenix badge-phoenix-warning">COAT</span></td>
+                                        <td>PKKD</td>
+                                        <td>1</td>
+                                        <td class="fw-bolder">C/PKKD.1/PMHC</td>
+                                        <td>INT</td>
+                                        <td><span class="badge badge-phoenix badge-phoenix-success me-1">E</span></td>
+                                        <td>27/11/23</td>
+                                        <td></td>
+                                        <td><span class="fas fa-times text-danger"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle white-space-nowrap pe-0 ps-4 btn-reveal-trigger">
+                                            <div class="font-sans-serif btn-reveal-trigger position-static">
+                                                <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                                                    <span class="fas fa-ellipsis-h fs--2"></span>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end py-2">
+                                                    <a class="dropdown-item" href="#!">View</a>
+                                                    <a class="dropdown-item" data-bs-toggle="offcanvas" href="#kimiaOffcanvas" role="button" aria-controls="kimiaOffcanvas">Edit</a>
+                                                    <a class="dropdown-item" data-bs-toggle="modal" href="#exampleModal">Variasi</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2</td>
+                                        <td>VsdG8</td>
+                                        <td><span class="badge badge-phoenix badge-phoenix-warning">COAT</span></td>
+                                        <td>PKKD</td>
+                                        <td>2</td>
+                                        <td class="fw-bolder">C/PKKD.2/B5410</td>
+                                        <td>INT</td>
+                                        <td><span class="badge badge-phoenix badge-phoenix-success me-1">E</span></td>
+                                        <td>27/11/23</td>
+                                        <td></td>
+                                        <td><span class="fas fa-check text-success"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle white-space-nowrap pe-0 ps-4 btn-reveal-trigger">
+                                            <div class="font-sans-serif btn-reveal-trigger position-static">
+                                                <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                                                    <span class="fas fa-ellipsis-h fs--2"></span>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end py-2">
+                                                    <a class="dropdown-item" href="#!">View</a>
+                                                    <a class="dropdown-item" data-bs-toggle="offcanvas" href="#kimiaOffcanvas" role="button" aria-controls="kimiaOffcanvas">Edit</a>
+                                                    <a class="dropdown-item" data-bs-toggle="modal" href="#exampleModal">Variasi</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>3</td>
+                                        <td>VsdG8</td>
+                                        <td><span class="badge badge-phoenix badge-phoenix-success">DIP</span></td>
+                                        <td>SG8%</td>
+                                        <td>2</td>
+                                        <td class="fw-bolder">D/SG8%.2/RG8</td>
+                                        <td>INT</td>
+                                        <td><span class="badge badge-phoenix badge-phoenix-success me-1">E</span></td>
+                                        <td>27/11/23</td>
+                                        <td></td>
+                                        <td><span class="fas fa-check text-success"></span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,9 +161,6 @@
         <div class="row g-4">
             <div class="col-12">
                 <div class="card border border-light">
-                    <div class="card-header">
-                        <h4 class="card-title">Kimia Baku</h4>
-                    </div>
                     <div class="card-body">
                         <div class="table-responsive mt-1">
                             <table class="table cell-border display table-compact table-hover table-striped table-item-kimiabaku" cellspacing="0" width="100%">
@@ -87,6 +186,7 @@
                                                 <div class="dropdown-menu dropdown-menu-end py-2">
                                                     <a class="dropdown-item" href="#!">View</a>
                                                     <a class="dropdown-item" data-bs-toggle="offcanvas" href="#kimiaOffcanvas" role="button" aria-controls="kimiaOffcanvas">Edit</a>
+                                                    <a class="dropdown-item" data-bs-toggle="modal" href="#exampleModal">Variasi</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a class="dropdown-item text-danger" href="#!">Remove</a>
                                                 </div>
@@ -109,6 +209,7 @@
                                                 <div class="dropdown-menu dropdown-menu-end py-2">
                                                     <a class="dropdown-item" href="#!">View</a>
                                                     <a class="dropdown-item" data-bs-toggle="offcanvas" href="#kimiaOffcanvas" role="button" aria-controls="kimiaOffcanvas">Edit</a>
+                                                    <a class="dropdown-item" data-bs-toggle="modal" href="#exampleModal">Variasi</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a class="dropdown-item text-danger" href="#!">Remove</a>
                                                 </div>
@@ -207,62 +308,106 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Acetic Acid</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Variasi - Acetic Acid</h5>
                 <button class="btn p-1" type="button" data-bs-dismiss="modal" aria-label="Close">
                     <span class="fas fa-times fs--1"></span>
                 </button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="d-flex bg-200">
-                        <div class="p-2 flex-grow-1 ">
-                            <div class="row row-cols-lg-5 g-1 align-items-center">
-                                <div class="col-12" hidden>
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control-plaintext outline-none" id="id" name="id" type="text" readonly="" value="<?= random_string('alnum', 6) ?>" />
+                <div class="mb-3">
+                    <form>
+                        <div class="d-flex bg-200">
+                            <div class="p-2 flex-grow-1 ">
+                                <div class="row row-cols-lg-5 g-1 align-items-center">
+                                    <div class="col-12" hidden>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control-plaintext outline-none" id="id" name="id" type="text" readonly="" value="<?= random_string('alnum', 6) ?>" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="sr-only" for="inlineFormInputGroupUsername">Tare</label>
-                                    <div class="input-group">
-                                        <input class="form-control" type="number" placeholder="Tare" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
-                                        <span class="input-group-text">Kg</span>
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormInputGroupUsername">Tare</label>
+                                        <div class="input-group">
+                                            <input class="form-control" type="number" placeholder="Tare" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+                                            <span class="input-group-text">Kg</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="sr-only" for="inlineFormInputGroupUsername">Netto</label>
-                                    <div class="input-group">
-                                        <input class="form-control" type="number" placeholder="Netto" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
-                                        <span class="input-group-text">Kg</span>
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormInputGroupUsername">Netto</label>
+                                        <div class="input-group">
+                                            <input class="form-control" type="number" placeholder="Netto" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+                                            <span class="input-group-text">Kg</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="sr-only" for="inlineFormInputGroupUsername">Berat Jenis</label>
-                                    <div class="input-group">
-                                        <input class="form-control" type="number" placeholder="Berat Jenis" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
-                                        <span class="input-group-text">Kg/Lit</span>
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormInputGroupUsername">Berat Jenis</label>
+                                        <div class="input-group">
+                                            <input class="form-control" type="number" placeholder="Berat Jenis" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+                                            <span class="input-group-text">Kg/Lit</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="sr-only" for="inlineFormInputName">Edate</label>
-                                    <input class="form-control datetimepicker" id="datepicker" type="text" placeholder="Edate" data-options='{"disableMobile":true,"dateFormat":"d/m/Y"}' />
-                                </div>
-                                <div class="col-12">
-                                    <label class="sr-only" for="inlineFormInputGroupUsername"></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected="">Pilih Status</option>
-                                        <option value="Efektif">Efektif</option>
-                                        <option value="Non-Efektif">Non-Efektif</option>
-                                    </select>
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormInputName">Edate</label>
+                                        <input class="form-control datetimepicker" id="datepicker" type="text" placeholder="Edate" data-options='{"disableMobile":true,"dateFormat":"d/m/Y"}' />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormInputGroupUsername"></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected="">Pilih Status</option>
+                                            <option value="Efektif">Efektif</option>
+                                            <option value="Non-Efektif">Non-Efektif</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="p-2">
+                                <button class="btn btn-phoenix-warning" type="button">Hapus</button>
+                                <button class="btn btn-primary" type="submit">Simpan</button>
+                            </div>
                         </div>
-                        <div class="p-2">
-                            <button class="btn btn-phoenix-warning" type="button">Hapus</button>
-                            <button class="btn btn-primary" type="submit">Simpan</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <div>
+                    <table class="table cell-border display table-compact table-hover table-striped table-variasi-kimia" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>NO</th>
+                                <th>ID</th>
+                                <th>KODE</th>
+                                <th>TARE</th>
+                                <th>NETTO</th>
+                                <th>B. JENIS</th>
+                                <th>EDATE</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle white-space-nowrap pe-0 ps-4 btn-reveal-trigger">
+                                    <div class="font-sans-serif btn-reveal-trigger position-static">
+                                        <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                                            <span class="fas fa-ellipsis-h fs--2"></span>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end py-2">
+                                            <a class="dropdown-item" data-bs-toggle="offcanvas" href="#kimiaOffcanvas" role="button" aria-controls="kimiaOffcanvas">Edit</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item text-danger" href="#!">Remove</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>VsdG8</td>
+                                <td>Acetic Acid/1000</td>
+                                <td>85</td>
+                                <td>1000</td>
+                                <td>1.2</td>
+                                <td>27/11/23</td>
+                                <td><span class="badge badge-phoenix badge-phoenix-success me-1">E</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="modal-footer"><button class="btn btn-outline-primary" type="button" data-bs-dismiss="modal">Kembali</button></div>
         </div>

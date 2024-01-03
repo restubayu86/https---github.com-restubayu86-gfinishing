@@ -71,14 +71,14 @@
     <!-- ===============================================-->
     <main class="main" id="top">
         <?php
-        // echo $this->include('templates/navbar-1');
-        // echo $this->include('templates/navbar-2');
-        // echo $this->include('templates/navbar-3');
+        echo $this->include('templates/navbar-1');
+        echo $this->include('templates/navbar-2');
+        echo $this->include('templates/navbar-3');
         echo $this->include('templates/navbar-4');
-        // echo $this->include('templates/navbar-5');
-        // echo $this->include('templates/navbar-6');
-        // echo $this->include('templates/navbar-7');
-        // echo $this->include('templates/navbar-8');
+        echo $this->include('templates/navbar-5');
+        echo $this->include('templates/navbar-6');
+        echo $this->include('templates/navbar-7');
+        echo $this->include('templates/navbar-8');
         ?>
         <script>
             var navbarTopShape = window.config.config.phoenixNavbarTopShape;
